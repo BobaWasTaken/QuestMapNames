@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>QuestMapNames</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx"><HintPath>F:\Spt\BepInEx\core\BepInEx.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>F:\Spt\BepInEx\core\0Harmony.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Assembly-CSharp"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Comfort"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\Unity.TextMeshPro.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\UnityEngine.UI.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Sirenix.Serialization"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\Sirenix.Serialization.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Sirenix.Utilities"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\Sirenix.Utilities.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes"><HintPath>F:\Spt\EscapeFromTarkov_Data\Managed\Sirenix.OdinInspector.Attributes.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+</Project>
