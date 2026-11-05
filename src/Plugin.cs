@@ -22,7 +22,7 @@ namespace QuestMapNames;
 // The maps come from the objectives: a "on location" condition lists them directly; a quest zone (place an item,
 // mark something, visit a spot) does not say its map, so the zones found in each raid are remembered in
 // learned-zones.txt, and until a map has been visited a zone named after its map ("..._woods_...") is used.
-[BepInPlugin("com.boba.questmapnames", "Quest Map Names", "1.0.1")]
+[BepInPlugin("com.boba.questmapnames", "Quest Map Names", "1.0.0")]
 public sealed class Plugin : BaseUnityPlugin
 {
 	private static ManualLogSource _log;
@@ -60,7 +60,7 @@ public sealed class Plugin : BaseUnityPlugin
 		harmony.Patch(AccessTools.Method(typeof(NotesTask), nameof(NotesTask.Show)), postfix: new HarmonyMethod(typeof(Plugin), nameof(AfterTaskRow)));
 		harmony.Patch(AccessTools.Method(typeof(NotesTaskDescription), nameof(NotesTaskDescription.Show)), postfix: new HarmonyMethod(typeof(Plugin), nameof(AfterTaskDetails)));
 		harmony.Patch(AccessTools.Method(typeof(GameWorld), nameof(GameWorld.OnGameStarted)), postfix: new HarmonyMethod(typeof(Plugin), nameof(AfterRaidStart)));
-		Logger.LogInfo("Quest Map Names 1.0.1 ready, " + Zones.Count + " quest zones known.");
+		Logger.LogInfo("Quest Map Names 1.0.0 ready, " + Zones.Count + " quest zones known.");
 	}
 
 	private static void AfterTaskRow(Quest quest, TextMeshProUGUI ____locationLabel)
